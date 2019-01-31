@@ -1,0 +1,123 @@
+NOTE COLLECTION
+	
+	collection --- > an object that can store multiple items 
+	
+	Collection Framework 
+	
+		a unified architecture for representing and manipulating collections
+		Ship with JDK , in java.util package
+		
+	WHY not just Array 
+	
+		Even though Array provide basic feature , it has many limitations like :
+		 Not resizable
+		 Not print friendly 
+		 Can not add and remove item easily
+		ect ….. 
+		
+	Benifits : 
+		
+		Reduces programming effort
+		Increases program speed and quality
+		Avoid reinventing the wheel 
+		Fosters software reuse
+		
+	Collection Framework contain :
+		
+		Interfaces 
+		Implementations
+		Algorithm 
+		
+	Interfaces : 
+	
+			Iterable 
+			
+			Collection  ---
+			
+	List     Set          Queue          Map 
+			SortedSet     Deque			SortedMap
+			
+	
+	Implementations : 
+		List ---  ordered (has index)
+				  can add or remove items on demand
+		
+		Performance :   
+			ArrayList :	backed by array internally  
+				adding items :
+					it will create new array each items to expand capacity
+				removing items :
+					it will create new array each items to reduce capacity					
+				accessing certain index element
+					jump right into the element directly 
+				Iteration 
+					faster since you can jump to element directly	
+				
+			
+			LinkedList : Use node that point to it's previous and next siblings 
+				adding items :
+					it will create pointer to the new element instead of creating 
+						whole new array like arraylist does
+				removing items :
+					it will remove the pointer to the element instead of creating 
+						whole new array like arraylist does
+										
+				accessing certain index element
+					can not jump right into the element directly 
+					because it has pointer to previous and next siblings 
+					it has to go throught each and every item before them
+					SLOWER
+				Iteration 
+					SLOWER
+					
+  FOR EACH LOOP Does not modify internal elements of collection 
+  because it works with copy. 
+  
+  can not remove an element while iterating using loops
+  
+  In order to remove an element while looping through it using for each loop ,
+   we need to create an iterator 
+  	
+  	List<String> lst = new LinkedList<>(); 
+		lst.add("ZWHITA");
+		lst.add("RED");
+		lst.add("BLUE");
+		lst.add("YALLOWZ");
+		System.out.println( lst );
+		
+		Iterator<String> lstIterator = lst.iterator();
+		while(lstIterator.hasNext()) {
+			
+			String target = lstIterator.next() ; 
+			
+			if(target.contains("A") && target.contains("Z")  ) {
+				
+				lstIterator.remove();
+				
+			}
+			
+		}
+		System.out.println( lst );
+		
+   
+  
+ Set --- Collection of Unique element (IT DOES NOT HAVE ORDER)
+		Popular implementation : HashSet 
+		
+	SortedSet -- Sub interface of Set with auto sorting functionality
+		Popular implementation : TreeSet
+		
+	You can also get a view out of a Set using subSet(itemToStart, itemToEnd)
+		headSet and tailSet is more specialized version of subSet for TreeSet
+		
+	 given	TreeSet st -- > ["A","B","F","K","Z"] 
+	 		subSet("B","K")  -->> "B","F"
+	 		tailSet("B") -->> "B","F","K","Z"
+	 		headSet("B") -->> "A"
+	 		
+	 		
+		 
+	
+	
+	
+	
