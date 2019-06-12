@@ -25,6 +25,7 @@ public class Map2 {
 		
 		Collection<String> values = product.values();
 		System.out.println( values );
+		System.out.println( values.size() );
 
 
 	}
