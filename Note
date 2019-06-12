@@ -114,10 +114,3 @@ NOTE COLLECTION
 	 		subSet("B","K")  -->> "B","F"
 	 		tailSet("B") -->> "B","F","K","Z"
 	 		headSet("B") -->> "A"
-	 		
-	 		
-		 
-	
-	
-	
-	
