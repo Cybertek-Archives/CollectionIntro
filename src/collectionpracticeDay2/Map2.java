@@ -15,18 +15,17 @@ public class Map2 {
 		product.put(300L, "pen");
 		product.put(12L, "bed");
 		product.put(50L, "pan");
-		
-		//System.out.println( product.size() );
+
+		// System.out.println( product.size() );
 
 		System.out.println(product);
-		
-		Set<Long> allkeys = product.keySet();
-		System.out.println( allkeys );
-		
-		Collection<String> values = product.values();
-		System.out.println( values );
-		System.out.println( values.size() );
 
+		Set<Long> allkeys = product.keySet();
+		System.out.println(allkeys);
+
+		Collection<String> values = product.values();
+		System.out.println(values);
+		System.out.println(values.size());
 
 	}
 

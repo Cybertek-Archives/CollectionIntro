@@ -1,29 +1,20 @@
 package collectionpracticeDay2;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
 import java.util.stream.Collectors;
 
 public class Queuepractice {
 
 	public static void main(String[] args) {
-		
+
 //		Queue<Integer> que = new LinkedList<>();
 //		que.add(2);
 //		que.add(1);
 //		que.add(3);
 //		que.add(6);
 //		que.add(9);		
-		
+
 //		System.out.println( que );
 //
 //		System.out.println( que.remove() ) ;
@@ -31,8 +22,7 @@ public class Queuepractice {
 //		System.out.println( que.remove() ) ;
 //		System.out.println( que.remove() ) ;
 //		System.out.println( que.remove() ) ;
-		
-		
+
 //		Deque<Integer> dq = new ArrayDeque<>();
 //		dq.add(2);
 //		dq.add(1);
@@ -47,11 +37,11 @@ public class Queuepractice {
 //		System.out.println(  dq.removeLast()  );
 //		System.out.println(  dq.removeLast()  );
 //		
-		
+
 //		String[] array = {"apple", "orange"};
 //		System.out.println(Arrays.asList(array));
 //		List<String> list = Arrays.asList("apple", "orange"); 
-		
+
 //		Map<String,Integer> records = new HashMap<>();
 //		
 //		records.put("apple", 1);
@@ -62,7 +52,7 @@ public class Queuepractice {
 //		if(records.containsKey("orange")) {
 //			System.out.println(records.get("orange").toString());
 //		}
-		
+
 		List<String> list = new ArrayList<>();
 		list.add("orange");
 		list.add("apple");

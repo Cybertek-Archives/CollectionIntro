@@ -1,6 +1,7 @@
 package collectionpracticeDay2;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MapPractice {
 
@@ -19,7 +20,7 @@ public class MapPractice {
 		ctMedalMap.put("Italy", 25);
 		ctMedalMap.put("Italy", 100);
 
-		//System.out.println(ctMedalMap);
+		// System.out.println(ctMedalMap);
 
 		// // CRUD Operation ---> Create , Read/Retrieve, Update, Delete
 		// System.out.println( ctMedalMap.get("USA") );
@@ -42,14 +43,14 @@ public class MapPractice {
 		 * 
 		 */
 		Map<Long, String> product = new HashMap<>();
-				product.put(123L, "book");
-				product.put(23L, "table");
-				product.put(300L, "pen");
-				product.put(12L, "bed");
-				product.put(50L, "pan");
-				
+		product.put(123L, "book");
+		product.put(23L, "table");
+		product.put(300L, "pen");
+		product.put(12L, "bed");
+		product.put(50L, "pan");
+
 		System.out.println(product);
-		
+
 		System.out.println(product.get(123L));
 		product.replace(23L, "chair");
 		System.out.println(product);

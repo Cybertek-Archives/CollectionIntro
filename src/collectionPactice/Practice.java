@@ -1,8 +1,7 @@
 package collectionPactice;
 
-import java.util.List;
-import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Practice {
 
@@ -20,8 +19,6 @@ public class Practice {
 				lst.remove(each);
 			}
 		}
-		
-		
 
 		for (int i = 0; i < lst.size(); i++) {
 			if (lst.get(i).contains("A") && lst.get(i).contains("Z")) {
